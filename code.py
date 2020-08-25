@@ -8,13 +8,13 @@ def intro():
 
 def achivement(flag):
     if flag<3:
-        print("Woow!!! You are a fucking psychic")
+        print("Woow!!! You are a  psychic")
     elif flag>3 and flag <8:
-        print("Cool ,You got it in {} guesses".format(flag))
+        print("Good Job ,You got it in {} guesses".format(flag))
     elif flag >8 and flag<12:
         print("finally done ,in {} tries".format(flag))
     else :
-        print("You want some more tries ,you Dumb tard ,you took {} tries".format(flag))
+        print("OKay ,you took {} tries".format(flag))
 
 guess =[0]
 
@@ -32,7 +32,7 @@ def run():
             print("yes Its {}".format(x))
             break
         elif a < 0 or a > 100:
-            print("Out of Bound,Dude")
+            print("Out of Bound")
 
         guess.append(a)
         if guess[-2] and abs(guess[-1]-x)<10:
@@ -42,9 +42,9 @@ def run():
                 print("colder")
         else:
             if abs(a - x) <= 10:
-                print('Garam ')
+                print('Hot')
             else:
-                print('Thanda')
+                print('Cold')
         flag += 1
     return flag
 
